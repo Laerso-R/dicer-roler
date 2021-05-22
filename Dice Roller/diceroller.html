@@ -8,21 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id=info>
-        <label for="d4">d4</label><input type="radio" name="dado" id="d4" checked> + <input type="text" name="difx" id="difd4" size='1px'> <br>
-        <label for="d6">d6</label><input type="radio" name="dado" id="d6"> + <input type="text" name="difx" id="difd6" size='1px'><br>
-        <label for="d8">d8</label><input type="radio" name="dado" id="d8"> + <input type="text" name="difx" id="difd8" size='1px'><br>
-        <label for="d10">d10</label><input type="radio" name="dado" id="d10"> + <input type="text" name="difx" id="difd10" size='1px'><br>
-        <label for="d20">d20</label><input type="radio" name="dado" id="d20"> + <input type="text" name="difx" id="difd20" size='1px'><br>
-        <p></p>
-    </div>
-    <div id=res>
-        <p></p>
-        <p></p>
-    </div>
-    <div>
-        <p><button onclick="rolar()">Rolar</button></p>
-    </div>
+    <section id="container">
+        <h1>Dice Roller</h1>
+
+        <form id=info>
+            <label for="d4">d4</label><input type="radio" name="dado" id="d4" checked> + <input type="text" name="difx" id="difd4" size='1px'> <br>
+            <label for="d6">d6</label><input type="radio" name="dado" id="d6"> + <input type="text" name="difx" id="difd6" size='1px'><br>
+            <label for="d8">d8</label><input type="radio" name="dado" id="d8"> + <input type="text" name="difx" id="difd8" size='1px'><br>
+            <label for="d10">d10</label><input type="radio" name="dado" id="d10"> + <input type="text" name="difx" id="difd10" size='1px'><br>
+            <label for="d20">d20</label><input type="radio" name="dado" id="d20"> + <input type="text" name="difx" id="difd20" size='1px'><br>
+        </form>
+        
+        <div>
+            <button type="submit" onclick="rolar()">Rolar</button>       
+        </div>
+
+        <div id=res>
+            <p>Você rola:</p>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>

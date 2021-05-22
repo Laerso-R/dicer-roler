@@ -23,6 +23,8 @@ function rolar () {
     let valor = Math.floor(Math.random()*dados+1)
     let total = valor + dif
     res.innerHTML = `Você rola: <strong>d${dados} (${valor}</strong>) + <strong>${dif}</strong> = <strong>${total}</strong>`
+ 
+    
     document.querySelector('input#difd4').value = ''
     document.querySelector('input#difd6').value = ''
     document.querySelector('input#difd8').value = ''
